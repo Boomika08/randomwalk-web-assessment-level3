@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="player-names">
+            <label for="playerX">Player X:</label>
+            <input type="text" id="playerX" placeholder="Enter name">
+            <label for="playerO">Player O:</label>
+            <input type="text" id="playerO" placeholder="Enter name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="game-board" class="hidden">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <p id="turnIndicator"></p>
+        <div id="scorecard" class="hidden">
+            <p id="playerXScore">Player X:  wins</p>
+            <p id="playerOScore">Player O:  wins</p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
